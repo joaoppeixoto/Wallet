@@ -1,2 +1,9 @@
 // Coloque aqui suas actions
-// demoro
+export const VALID_EMAIL = 'VALID_EMAIL';
+
+export const validEmail = (email) => ({
+  type: VALID_EMAIL,
+  payload: {
+    email,
+  },
+});
