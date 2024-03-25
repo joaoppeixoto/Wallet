@@ -44,7 +44,7 @@ class Login extends React.Component {
           <label htmlFor="email">
             <input
               data-testid="email-input"
-              placeholder="Login"
+              placeholder="Email"
               id="email"
               type="email"
               name="email"
@@ -83,12 +83,8 @@ class Login extends React.Component {
 
 Login.propTypes = {
   dispatch: PropTypes.func.isRequired,
-  history: PropTypes.objectOf.isRequired,
+  history: PropTypes.func.isRequired,
 
 };
-
-// const mapStateToProps = (state) => ({
-//   email: state.user.email,
-// });
 
 export default connect()(Login);

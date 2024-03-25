@@ -1,4 +1,4 @@
-import { VALID_EMAIL } from '../actions/actionTypes';
+import { VALID_EMAIL } from '../actions';
 
 // Esse reducer será responsável por tratar as informações da pessoa usuária
 const INNITIAL_STATE = {

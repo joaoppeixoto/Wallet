@@ -208,5 +208,52 @@ const mockData = {
     create_date: '2022-05-30 17:47:16',
   },
 };
+export const initialStateExpenses = {
+  user: {
+    email: 'alguem@email.com',
+  },
+  wallet: {
+    isFetching: false,
+    editor: false,
+    idToEdit: 0,
+    currencyToExchange: 'BRL',
+    currencies: [
+      'USD',
+      'CAD',
+      'EUR',
+      'GBP',
+      'ARS',
+      'BTC',
+      'LTC',
+      'JPY',
+      'CHF',
+      'AUD',
+      'CNY',
+      'ILS',
+      'ETH',
+      'XRP',
+    ],
+    expenses: [
+      {
+        id: 0,
+        value: '10',
+        currency: 'USD',
+        method: 'Cartão de crédito',
+        tag: 'Lazer',
+        description: 'Dez dólares',
+        exchangeRates: mockData,
+      },
+      {
+        id: 1,
+        value: '20',
+        currency: 'EUR',
+        method: 'Dinheiro',
+        tag: 'Trabalho',
+        description: 'Vinte euros',
+        exchangeRates: mockData,
+      },
+    ],
+  },
+};
 
 export default mockData;
